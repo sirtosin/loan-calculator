@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width
+    , initial-scale=1.0">
+       <!-- Compiled and minified CSS -->
+       <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Loan Calculator</title>
+</head>
+<body> 
+
+    <main class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card center">
+                    <h1 class="heading">Loan Calculator</h1>
+                    <form action="#" id="loan-form">
+                        <div class="input-field">
+                            <i class="material-icons prefix">$</i>
+                            <input type="number" id="amount" placeholder="Loan Amount">
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">%</i>
+                            <input type="number" id="interest" placeholder="interest">
+                        </div>
+                        <div class="input-field">
+                            <i class=" material-icons prefix">today</i>
+                            <input type="number" id="years" placeholder="years to repay">
+                        </div>
+                        <div class="input-field">
+                            <button type="submit" class="btn waves-effect">calculate</button>
+                        </div>
+                    </form>
+                    <!--loader here-->
+                    <div class="load">
+                        <div class="preloader-wrapper big active">
+                            <div class="spinner-layer spinner-blue">
+                              <div class="circle-clipper left">
+                                <div class="circle"></div>
+                              </div><div class="gap-patch">
+                                <div class="circle"></div>
+                              </div><div class="circle-clipper right">
+                                <div class="circle"></div>
+                              </div>
+                            </div>
+                      
+                            <div class="spinner-layer spinner-red">
+                              <div class="circle-clipper left">
+                                <div class="circle"></div>
+                              </div><div class="gap-patch">
+                                <div class="circle"></div>
+                              </div><div class="circle-clipper right">
+                                <div class="circle"></div>
+                              </div>
+                            </div>
+                      
+                            <div class="spinner-layer spinner-yellow">
+                              <div class="circle-clipper left">
+                                <div class="circle"></div>
+                              </div><div class="gap-patch">
+                                <div class="circle"></div>
+                              </div><div class="circle-clipper right">
+                                <div class="circle"></div>
+                              </div>
+                            </div>
+                      
+                            <div class="spinner-layer spinner-green">
+                              <div class="circle-clipper left">
+                                <div class="circle"></div>
+                              </div><div class="gap-patch">
+                                <div class="circle"></div>
+                              </div><div class="circle-clipper right">
+                                <div class="circle"></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <!--results-->
+                    <form id="results">
+                        <h5>Results</h5>
+                        <div class="input-field">
+                            <input type="number" id="monthly-payment" disabled placeholder="monthly-payment">
+                            <label for="monthly-payment">Monthly Payment</label>
+                        </div>    
+                        <div class="input-field"> 
+                            <input type="number" id="total-payment" disabled placeholder="total payment">
+                            <label for="total-payment">Total Payment</label>
+                        </div>    
+                        <div class="input-field">
+                            <input type="number" id="total-interest" disabled placeholder="total-interest">
+                            <label for="total-interest">Total Interest</label>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </div>
+      
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+    <script src="/app.js"></script>
+</body>
+</html>
